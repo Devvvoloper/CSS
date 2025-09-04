@@ -1,0 +1,21 @@
+<!-- Create an element with id head and verify that background color works on it as inline, external as well as internal CSS. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Question</title>
+    <style>
+        span#head1 {
+            background-color: blue;
+        }
+    </style>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+    <span id="head1">This is a styled span 1.</span>
+    <span id="head2" style="background-color: red;">This is a styled span 2.</span>
+    <span id="head3">This is a styled span 3.</span>
+</body>
+</html>
