@@ -1,0 +1,29 @@
+<!-- Create a web page with 5 paragraph inside the div. Style first paragraph to have background color as red. And other paragraphs to hae background color as blue and color as white. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Exercise</title>
+    <style>
+        div > p {
+            background-color: red;
+        }
+
+        div p:not(:first-child) {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia soluta laboriosam doloribus sunt. Harum quae perferendis repudiandae accusamus. Odit voluptatum inventore adipisci necessitatibus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia soluta laboriosam doloribus sunt. Harum quae perferendis repudiandae accusamus. Odit voluptatum inventore adipisci necessitatibus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia soluta laboriosam doloribus sunt. Harum quae perferendis repudiandae accusamus. Odit voluptatum inventore adipisci necessitatibus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia soluta laboriosam doloribus sunt. Harum quae perferendis repudiandae accusamus. Odit voluptatum inventore adipisci necessitatibus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia soluta laboriosam doloribus sunt. Harum quae perferendis repudiandae accusamus. Odit voluptatum inventore adipisci necessitatibus!</p>
+    </div>
+</body>
+</html>
