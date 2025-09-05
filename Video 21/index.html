@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cascade and Specificity</title>
+    <style>
+        .red {
+            color: red;
+        }
+        .blue {
+            color: blue;
+        }
+        .green {
+            color: green;
+        }
+
+        div {
+            font-size: 24px; /* Since specificity is low, even the position is low, not applicable */
+        }
+
+        div.red.blue.green[class] { /*specificity = 1+10+10+10+10=41 */
+            font-size: 30px; /* Higher specificity due to attribute selector */
+        }
+        /* Nothing can override specificity of Inline CSS except !important since 1000 < 10000 [Inline CSS < !important] */
+    </style>
+</head>
+<body>
+    <div class="red blue green">This is a div.</div>
+</body>
+</html>

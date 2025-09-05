@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing and its Units</title>
+    <style>
+        .container {
+            background: rgb(0, 255, 247);
+            border: 2px solid black;
+            width: 50vw; /* 50% of the viewport width */
+            height: 100vmin; /* 100% of the viewport's smaller dimension */
+            margin: auto;
+            /* font-size: 10px;  */
+            box-sizing: border-box;
+            word-break: break-all;
+            overflow: scroll;
+        }
+
+        .container div {
+            font-size: 2em;
+        }
+
+        /* html {
+            /* font-size: 10 px; 16px - 1 rem = 10 px} */
+
+        .container p {
+            font-size: 1.5rem;
+        }
+
+        div.container > div > div {
+            font-size: 50%;        }
+    </style>
+</head>
+<body>
+    <h3>CSS units</h3>
+    <hr>
+    <ul>
+        <li>px</li> <!-- Pixels are not relative units -->
+        <li>vh</li> <!-- 1vh = 1% of the viewport height -->
+        <li>vw</li> <!-- 1vw = 1% of the viewport width -->
+        <li>em</li> <!-- Relative to the font-size of the element -->
+        <li>rem</li> <!-- Relative to the font-size of the root element -->
+        <li>%</li> <!-- Percentage of the parent element -->
+        <li>vmin</li> <!-- 1vmin = 1% of the viewport's smaller dimension -->
+        <li>vmax</li> <!-- 1vmax = 1% of the viewport's larger dimension -->
+    </ul>
+
+    <div class="container">
+        <div class="mycont">
+            <div>Hey there this is a Div.</div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi laudantium aperiam, nobis sequi facere fugiat accusamus odio excepturi incidunt dolore doloremque alias reiciendis voluptate cupiditate, dicta soluta ut saepe repudiandae quibusdam molestias, quos exercitationem ea animi! Voluptates sit ipsum molestias ad facilis possimus at iure!
+            </p>
+
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, repudiandae. Autem aperiam molestiae nostrum sed beatae quos consectetur in quod tenetur ea nulla dolorum ipsum, nobis pariatur suscipit deleniti vitae facilis, dolores soluta? Odio, voluptates sit? Earum, nisi aliquid dolor iusto voluptate officiis dignissimos mollitia cupiditate assumenda animi tempora distinctio sequi odio quas cumque fuga deleniti, similique ducimus dolores fugiat soluta perspiciatis eius repellendus doloremque! Ipsa repellat eaque adipisci reiciendis suscipit ducimus, impedit quo odio omnis nostrum veniam doloribus consequatur! Accusamus cum porro sint eius error amet doloribus esse excepturi rerum saepe, mollitia molestiae vero minus asperiores, animi, laudantium nulla deserunt voluptate. Vel debitis saepe voluptatibus expedita, dicta illum reprehenderit dolor quidem, quasi porro neque ad assumenda, possimus ea quod obcaecati ullam tenetur? Maxime facilis quam ipsum accusamus voluptatum corrupti praesentium possimus sit reprehenderit distinctio debitis quasi veritatis, ut error animi sunt rem eligendi vitae? Unde atque exercitationem magni odit vel pariatur ea suscipit maiores quis labore placeat eum debitis earum veritatis nisi incidunt natus quae hic aperiam, laboriosam architecto praesentium. Repellendus saepe enim nulla nam doloremque error quo nesciunt distinctio dolorum optio provident at ipsam, odit minima explicabo fugiat suscipit. Assumenda quos neque quisquam voluptatum itaque nam eveniet alias, voluptas dolorem atque velit rem cum enim, qui reprehenderit nesciunt quo doloremque? In commodi impedit obcaecati perspiciatis placeat illo sed ea animi nulla non, incidunt libero suscipit odit ullam quam porro voluptas dolorum quae sequi culpa. Nam accusamus maxime rem nulla hic aperiam officia inventore. Officia, quisquam atque recusandae in, neque cumque illum explicabo nisi magni repellat et velit eos, reprehenderit ullam tempore nostrum eligendi iusto laudantium rerum perferendis tenetur perspiciatis aperiam! Dolores saepe unde consectetur minus eius at consequuntur, eveniet, quam ea corrupti fugiat corporis iusto labore aperiam temporibus ex accusantium aspernatur officiis. Ullam nesciunt reprehenderit in cumque a ratione, reiciendis exercitationem placeat, vitae, accusamus pariatur nostrum distinctio sequi voluptatibus iste fugiat optio quam. Repellendus, tempora. Mollitia, voluptate inventore. Dolorum tempore incidunt sed ut at minima sit quo praesentium modi cupiditate repudiandae voluptas, nemo labore ipsa, odio possimus dolorem sunt inventore eos temporibus eveniet maxime. Possimus dignissimos similique non beatae vitae doloribus, cum a iure perferendis quis cupiditate ipsam vel minima eos consequatur quia suscipit provident! Doloribus, voluptate animi dolorum deleniti atque fuga blanditiis aperiam ratione? Optio tempore totam reiciendis voluptatem quaerat alias doloribus repudiandae, id vitae libero recusandae exercitationem impedit ipsum enim cum beatae eligendi nihil nostrum! Sequi quis maiores perferendis culpa aut, eligendi nobis neque in, excepturi facilis libero voluptate eos adipisci totam, exercitationem quo tempore alias voluptates! Soluta illo distinctio, tempora consequatur corporis facilis inventore numquam aspernatur enim dignissimos maiores necessitatibus dolores blanditiis, deleniti adipisci expedita rerum quisquam ipsum officiis nulla repellendus, ratione nobis? Sit dicta, fugiat perspiciatis ea rem corporis consectetur at. Ipsum asperiores, quis esse culpa explicabo eaque consequatur vel aspernatur. Omnis vero similique voluptas repudiandae corrupti excepturi quisquam odio fugiat dolore id saepe, veritatis ducimus cumque neque explicabo corporis magnam voluptatem nulla accusantium temporibus eligendi at. Ex fugit sit voluptatum reiciendis officia earum!</p>  -->
+             <!-- This extends the container height due to vmin specified -->
+        </div>
+    </div>
+</body>
+</html>
