@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Property</title>
+    <style>
+          * {
+            margin: 0;
+            padding: 0;
+          }
+
+          .block {
+            border: 2px solid black;
+            display: block;
+          }
+
+          .inline {
+            border: 2px solid black;
+            display: inline;
+          }
+
+          .inlineblock {
+            border: 2px solid black;
+            display: inline-block;
+            margin: 20px;
+            padding: 20px;
+          }
+          
+          .none {
+            border: 2px solid black;
+            /* display: none;*/
+            /* visibility: hidden; */ /* it will hide the element but will take space */
+          }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h3>There are six types of display property in CSS:</h3>
+        <ul>
+            <li>Block</li>
+            <li>Inline</li>
+            <li>Inline-block</li>
+            <li>Flex - we will learn afterwards separately</li>
+            <li>Grid - we will learn afterwards separately</li>
+            <li>None</li>
+        </ul>
+    </div>
+
+    <span class="block">This is a span that acts like a block element</span>
+
+    <div class="inline">This is a div that acts like an inline element</div>
+
+    <span class="inlineblock">This is an inline which can have margin and padding all around.</span>
+
+    <div class="none">This is a div</div>
+    <div>This is a div</div>
+</body>
+</html>
