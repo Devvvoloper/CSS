@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property</title>
+    <style>
+        .box {
+            width: 20vw;
+            height: 10vw;
+            border: 2px solid black;
+            /* overflow: scroll; */
+            /* overflow: auto; */
+            /* white-space: nowrap; */
+            /* overflow: hidden; */
+            overflow: auto hidden;
+            text-overflow: ellipsis;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">This is a box Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti
+        quisquam voluptatum, amet distinctio, at accusamus aspernatur possimus illo quibusdam dolorum, iusto vero quam
+        blanditiis quidem tempore mollitia similique est? Dolorem, maxime.
+    </div>
+</body>
+
+</html>
