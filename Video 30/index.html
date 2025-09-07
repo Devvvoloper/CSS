@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --color: red;
+            --defop: 0.4;
+            --defpad: 0.4;
+            --defmar: 10px;
+            --liststyle: none;
+        }
+
+        ul li{
+            opacity: var(--defop);
+            padding: var(--defpad);
+            background-color: var(--color);
+            margin: var(--defmar);
+        }
+
+        ul {
+            display: flex;
+            list-style: var(--liststyle);
+            border: 2px solid black;
+        }
+
+        nav {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>About</li>
+            <li>Contact</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+</body>
+</html>

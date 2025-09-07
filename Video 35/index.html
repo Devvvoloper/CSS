@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        /* .box:first-child {
+            color:red;
+        } */
+
+        /* .box::first-letter {
+            font-size: 44px;
+            color: peru
+        } */
+
+        /* .box:nth-child(even) {
+            color: orangered;
+        } */
+
+        /* .box::first-line {
+            color: green;
+        } */
+
+        .box:nth-last-child(1){
+            color: red;
+        }
+
+        .box::selection {
+            color: cyan;
+            background-color: black;
+        }
+
+        input::placeholder {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hey, I am the first box.</div>
+        <div class="box">Hey, I am the second box.</div>
+        <div class="box">Hey, I am the third box.</div>
+        <br>
+        <input type="text" placeholder="Enter Your Name">
+    </div>
+</body>
+</html>

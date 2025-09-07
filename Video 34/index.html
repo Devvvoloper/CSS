@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        img {
+            float: right;
+        }
+
+        .cards {
+            border: 2px solid black;
+        }
+
+        .card {
+            border: 2px solid red;
+        }
+
+        /* .cards:nth-child(1) {
+            display: flow-root;
+            To avoid the element to flow outside the parent. If can overflowing,
+            floats makes it overflow the parent element i.e. div here
+        } */
+
+        div:nth-child(3) {
+            background-color: aqua;
+            /* clear: right; /*this also prevents the overflow and anyobject to overfloat in the element's specified direction. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="https://imgs.search.brave.com/LF15YHRhD9BkrJsBoIzoxuqELQ5KMppl0Ujf6bxHLPE/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy84/Lzg2L0RhbF9jaGF3/YWxfYXVyX3NhYnpp/LkpQRw"
+            width="300">
+        <div class="card">Card 1</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero hic quae eveniet, neque sequi
+            deserunt, tempore, accusamus facilis quia pariatur tempora id suscipit debitis labore! Possimus sequi
+            voluptatibus, reiciendis adipisci tempora nihil vel quam, dicta quis perspiciatis odio officiis consequuntur
+            obcaecati porro necessitatibus consectetur maxime. Dolorem soluta voluptas impedit, quidem temporibus
+            quaerat laborum at ut.
+
+        </div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+
+</html>
