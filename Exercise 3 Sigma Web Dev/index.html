@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Example</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #ebefef;
+            font-family: 'Poppins', sans-serif;
+        }
+        .cardbg {
+            width: 350px;
+            max-width: 90vw;
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 8px 24px 0 #bfc7ce33;
+            margin: 40px auto;
+            overflow: hidden;
+        }
+        .card-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px 20px 0 0;
+            display: block;
+        }
+        .card-content {
+            padding: 24px 18px 24px 18px;
+        }
+        .tags {
+            margin-bottom: 14px;
+        }
+        .tag {
+            background: #f3f4f6;
+            color: #7a7a7a;
+            border-radius: 22px;
+            padding: 4px 16px;
+            font-size: 0.96em;
+            margin-right: 8px;
+            display: inline-block;
+            font-weight: 500;
+        }
+        .card-title {
+            font-size: 2em;
+            font-weight: 600;
+            color: #232323;
+            margin: 12px 0 10px 0;
+        }
+        .para {
+            font-size: 1.15em;
+            color: #737373;
+            line-height: 1.6em;
+            margin-bottom: 30px;
+        }
+        .read-more {
+            background: #e3edfa;
+            color: #0b4b8a;
+            border-radius: 20px;
+            border: none;
+            padding: 10px 32px;
+            font-size: 1em;
+            font-weight: 500;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .read-more:hover {
+            background: #d0e2ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="cardbg">
+        <img src="C:\Users\devvv\Downloads\3126a8a700b72e1c38683c1940069be3.jpg" alt="Lago di Braies" class="card-image">
+        <div class="card-content">
+            <div class="tags">
+                <span class="tag">Nature</span>
+                <span class="tag">Lake</span>
+            </div>
+            <div class="card-title">Lago di Braies</div>
+            <div class="para">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur sodales morbi dignissim sed diam pharetra vitae ipsum odio.
+            </div>
+            <button class="read-more">Read More</button>
+        </div>
+    </div>
+</body>
+</html>
